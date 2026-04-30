@@ -16,8 +16,10 @@ void ValorPi(){
     fin = clock();
     time_ms = ((double)(fin-inicio)/CLOCKS_PER_SEC)*1000;
     printf("Tiempo %.9f ms\n", time_ms);
-    printf("El valor de PI es: %.10f", pi);
+    printf("El valor de PI es: %.9f", pi);
 }
+
+
 
 main(){
     ValorPi();
