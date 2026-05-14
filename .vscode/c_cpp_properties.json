@@ -3,14 +3,20 @@
     {
       "name": "linux-gcc-x64",
       "includePath": [
-        "${workspaceFolder}/**"
+        "${workspaceFolder}/**",
+        "/usr/lib/gcc/x86_64-redhat-linux/15/include",
+        "/usr/lib/clang/19/include",
+        "/usr/lib/clang/21/include"
       ],
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "${default}",
-      "cppStandard": "${default}",
+      "compilerPath": "/usr/bin/g++",
+      "cStandard": "c17",
+      "cppStandard": "c++11",
       "intelliSenseMode": "linux-gcc-x64",
       "compilerArgs": [
-        ""
+        "-fopenmp"
+      ],
+      "defines": [
+        "_OPENMP"
       ]
     }
   ],
